@@ -1,0 +1,111 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a survey form</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <legend>Identity</legend>
+      <label id="name-label">Name? <input type="text" id="name" placeholder="Budi" required /></label>
+      <label id="email-label">Email? <input type="email" id="email" placeholder="budi@gmail.com" required /></label>
+      <label id="number-label">NIM? <input type="number" id="number" min="18220000" max="18220100" placeholder="18220055" required /></label>
+      <label id="select-label">Gender?
+        <select id="dropdown">
+          <option></option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </label>
+    </fieldset>
+      
+    <fieldset>
+      <legend>Mode preference</legend>
+      <label><input type="radio" id="light" name="mode" value="light" class="inline" /> Light mode</label>
+      <label><input type="radio" id="dark" name="mode" value="dark" class="inline" /> Dark mode</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>OS preference</legend>
+      <label><input type="checkbox" value="android" class="inline" /> Android</label>
+      <label><input type="checkbox" value="ios" class="inline" /> iOS</label>
+      <label>Reason
+        <textarea>
+        </textarea>
+      </label>
+    </fieldset>
+
+    <input type="submit" id="submit" />
+  </form>
+    
+</body>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  margin: 0;
+  background-color: pink;
+  font-size: 18px;
+  font-family: "Times New Roman";
+}
+
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 60%;
+  min-width: 50%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 1rem;
+  margin: 1em 0;
+}
+
+legend{
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 0.3em 0;
+  min-height: 2em;
+}
+
+label input[type="radio"], label input[type="checkbox"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  height:2em;
+  margin: 1em auto 3em;
+  min-width: 30%px;
+}
+
+** end of undefined **
+

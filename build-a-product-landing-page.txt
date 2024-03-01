@@ -1,0 +1,189 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <header id="header">
+    <img id="header-img" src="https://educateyourfuture.com/wp-content/uploads/2018/03/tedx-logo.png">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#one">Video</a>
+      <a class="nav-link" href="#two">Description</a>
+      <a class="nav-link" href="#three">Content</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>How to Stay Calm When You Know You'll Be Stressed</h1>
+      <h2><span>Daniel Levitin</span> | TED</h2>
+      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form" >
+        <input id="email" type="email" placeholder="xxx@yyy.zzz" name="email" />
+        <input id="submit" type="submit" value="Subscribe">
+    </form>
+    </section>
+    <div class="container">
+      <section id="one">
+        <iframe id="video" src="https://www.youtube.com/embed/8jPQjjsBbIc" title="How to stay calm when you know you&#39;ll be stressed | Daniel Levitin | TED" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </section>
+      <section id="two">
+        <h2>Description</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis vehicula est sagittis mattis. Aliquam facilisis nec sapien et faucibus. Mauris eu libero consectetur turpis auctor efficitur. Nam molestie mollis.</p>
+      </section>
+      <section id="three">
+        <h2>Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis vehicula est sagittis mattis. Aliquam facilisis nec sapien et faucibus. Mauris eu libero consectetur turpis auctor efficitur. Nam molestie mollis.</p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --pink: LavenderBlush;
+  --red: #EB0028;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pink);
+  font-family: Helvetica;
+  margin: 0;
+}
+
+#header {
+  background-color: var(--pink);
+  width: 100%;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+#header-img {
+  width: max(100px, 10vw);
+  aspect-ratio: 2 / 1;
+  margin: auto 0;
+  margin-left: 5px;
+  padding: 0.3rem
+}
+
+#nav-bar {
+  width: 50%;
+  height: 85px;
+  max-width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#nav-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+#nav-bar a:hover {
+  color: var(--red);
+}
+
+main {
+  padding-top: 85px; 
+}
+
+#hero {
+  margin-top: 35px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  margin-bottom: 0;
+}
+
+#hero h2 {
+  margin-top: 0;
+}
+
+#hero h2 span {
+  color: var(--red)
+}
+
+#form {
+  display: block;
+}
+
+input {
+  font-size: 16px;
+}
+
+#email {
+  width: 100%
+}
+
+#submit {
+  padding: 5px;
+  min-width: 100px;
+  margin-top: 10px;
+  color: white;
+  background-color: var(--red);
+  border: none;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+#video {
+  width: 700px;
+  height: 400px;
+}
+
+#two, #three {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+/* Media */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+** end of undefined **
+
