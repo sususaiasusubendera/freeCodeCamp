@@ -1,0 +1,175 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Technical Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Random Technical Documentation</header>
+      <a class="nav-link" href="#A">A</a>
+      <a class="nav-link" href="#B">B</a>
+      <a class="nav-link" href="#C">C</a>
+      <a class="nav-link" href="#D">D</a>
+      <a class="nav-link" href="#E">E</a>
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="A">
+        <header>A</header>
+        <p>xxxxxxxxxx</p>
+        <p>xxxxxxxxxx</p>
+        <code>print('Hello, World!); </code>
+        <code>print('Hello, World!); </code>
+        <ol>
+          <li>Hello, World!</li>
+          <li>Hello, World!</li>
+        </ol>
+      </section>
+      <section class="main-section" id="B">
+        <header>B</header>
+        <p>xxxxxxxxxx</p>
+        <p>xxxxxxxxxx</p>
+        <code>print('Hello, World!); </code>
+        <code>print('Hello, World!); </code>
+        <ol>
+          <li>Hello, World!</li>
+          <li>Hello, World!</li>
+        </ol>
+      </section>
+      <section class="main-section" id="C">
+        <header>C</header>
+        <p>xxxxxxxxxx</p>
+        <p>xxxxxxxxxx</p>
+        <code>print('Hello, World!); </code>
+        <code>print('Hello, World!); </code>
+        <ol>
+          <li>Hello, World!</li>
+          <li>Hello, World!</li>
+        </ol>
+      </section>
+      <section class="main-section" id="D">
+        <header>D</header>
+        <p>xxxxxxxxxx</p>
+        <p>xxxxxxxxxx</p>
+        <code>print('Hello, World!); </code>
+        <code>print('Hello, World!); </code>
+        <ol>
+          <li>Hello, World!</li>
+          <li>Hello, World!</li>
+        </ol>
+      </section>
+      <section class="main-section" id="E">
+        <header>E</header>
+        <p>xxxxxxxxxx</p>
+        <p>xxxxxxxxxx</p>
+        <code>print('Hello, World!); </code>
+        <code>print('Hello, World!); </code>
+        <ol>
+          <li>Hello, World!</li>
+          <li>Hello, World!</li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (max-width: 500px) {
+  body {
+    background-color: lightblue !important;
+  }
+
+  #navbar {
+    background-color: pink !important;
+  }
+
+  #main-doc .main-section {
+    background-color: lightgreen !important;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgreen;
+  margin: 0;
+}
+
+#navbar {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#navbar header {
+  font-weight: bold;
+}
+
+#navbar a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#navbar a[href="#A"]:hover {
+  color: red;
+}
+
+#navbar a[href="#B"]:hover {
+  color: orange;
+}
+
+#navbar a[href="#C"]:hover {
+  color: yellow;
+}
+
+#navbar a[href="#D"]:hover {
+  color: green;
+}
+
+#navbar a[href="#E"]:hover {
+  color: blue;
+}
+
+#main-doc {
+  padding-top: 60px;
+}
+
+#main-doc .main-section {
+  width: 80%;
+  margin: 10px auto 10px auto;
+  max-width: 400px;
+  background-color: pink;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+
+#main-doc .main-section:last-child {
+  margin-bottom: 30px;
+}
+
+
+** end of undefined **
+
