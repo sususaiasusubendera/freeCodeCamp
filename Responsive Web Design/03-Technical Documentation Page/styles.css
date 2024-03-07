@@ -1,0 +1,86 @@
+  @media (max-width: 500px) {
+    body {
+      background-color: lightblue !important;
+    }
+  
+    #navbar {
+      background-color: pink !important;
+    }
+  
+    #main-doc .main-section {
+      background-color: lightgreen !important;
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: lightgreen;
+    margin: 0;
+  }
+  
+  #navbar {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+    text-align: center;
+  }
+  
+  #navbar header {
+    font-weight: bold;
+  }
+  
+  #navbar a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #navbar a[href="#A"]:hover {
+    color: red;
+  }
+  
+  #navbar a[href="#B"]:hover {
+    color: orange;
+  }
+  
+  #navbar a[href="#C"]:hover {
+    color: yellow;
+  }
+  
+  #navbar a[href="#D"]:hover {
+    color: green;
+  }
+  
+  #navbar a[href="#E"]:hover {
+    color: blue;
+  }
+  
+  #main-doc {
+    padding-top: 60px;
+  }
+  
+  #main-doc .main-section {
+    width: 80%;
+    margin: 10px auto 10px auto;
+    max-width: 400px;
+    background-color: pink;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+  }
+  
+  #main-doc .main-section:last-child {
+    margin-bottom: 30px;
+  }
