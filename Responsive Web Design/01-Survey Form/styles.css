@@ -1,1 +1,53 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: pink;
+  font-size: 18px;
+  font-family: "Times New Roman";
+}
 
+h1, p {
+  text-align: center;
+  margin: 1em auto;
+}
+
+form {
+  width: 60%;
+  min-width: 50%;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 1rem;
+  margin: 1em 0;
+}
+
+legend{
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin: 0.3em 0;
+  min-height: 2em;
+}
+
+label input[type="radio"], label input[type="checkbox"] {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 40%;
+  height:2em;
+  margin: 1em auto 3em;
+  min-width: 30%px;
+}
