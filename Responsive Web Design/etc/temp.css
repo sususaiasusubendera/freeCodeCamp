@@ -1,5 +1,14 @@
-* {
+*, ::before, ::after {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -18,7 +27,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 1px solid white
+  border-bottom: 1px solid white;
+  z-index: 1;
 }
 
 #navbar > ul {
@@ -32,8 +42,6 @@ body {
 
 #navbar ul a {
   padding: 1rem;
-  text-decoration: none;
-  color: white;
 }
 
 #navbar ul a:hover {
@@ -61,6 +69,54 @@ body {
   font-size: 1.5rem;
   position: relative;
   bottom: 15px;
+}
+
+/* projects-grid */
+#projects {
+  text-align: center;
+  padding: 50px;
+}
+
+#projects h2 {
+  margin-bottom: 70px;
+}
+
+.projects-grid {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 50px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.project-tile {
+  background-color: black;
+}
+
+.project-image {
+  height: calc(100% - 30px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  position: relative;
+  bottom: 7px;
+}
+
+.code {
+  color: gray;
+  transition: color .2s ease-out;
+}
+
+.project-tile:hover .code {
+  color: white;
+}
+
+/* contact*/
+#contact {
+  display: flex;
 }
 
 /* hover h1 */
