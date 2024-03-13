@@ -21,7 +21,6 @@ body {
 #navbar {
   background-color: black;
   width: 100%;
-  
   display: flex; 
   justify-content: flex-end;
   position: fixed;
@@ -37,11 +36,12 @@ body {
   align-items: center;
   margin-right: 0.5rem;
   list-style: none;
-  font-weight: bold
+  font-weight: bold;
 }
 
 #navbar ul a {
   padding: 1rem;
+  transition: background-color .2s ease-out;
 }
 
 #navbar ul a:hover {
@@ -63,6 +63,7 @@ body {
   font-size: 4rem;
   position: relative;
   top: 25px;
+  text-align: center;
 }
 
 #welcome-section p {
